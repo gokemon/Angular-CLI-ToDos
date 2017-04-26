@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Ranga');
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark');
+
+/* Master Styles */
+
+h1 {
+    color: #369;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 250%;
+}
+
+footer p {
+    font-family: 'Ranga', cursive;
+}
