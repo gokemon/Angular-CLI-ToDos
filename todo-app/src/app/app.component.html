@@ -1,7 +1,29 @@
-<h1>
-    {{title}}
-</h1>
-<h2>
-    {{myStatement1}}
-</h2>
-<p>{{myStatement2}}</p>
+<section class="todoapp">
+    <header class="header">
+        <h1>{{title}}</h1>
+        <p class="langBundle">{{myStatement2}}</p>
+        <input class="new-todo" placeholder={{fmPlaceHolder}} autofocus="" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()">
+    </header>
+
+    <section class="main" *ngIf="todos.length > 0">
+        <ul class="todo-list">
+            <li *ngFor="let todo of todos" [class.completed]="todo.complete">
+                <div class="view">
+                    <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
+                    <label>{{todo.title}}</label>
+                    <button class="destroy" (click)="removeTodo(todo)"></button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- main class-->
+
+    <footer class="footer" *ngIf="todos.length > 0">
+        <span class="todo-count">
+            <strong>{{todos.length}}</strong> 
+            {{todos.length == 1 ? 'item' : 'items'}}
+        </span>
+
+    </footer>
+</section>
+<!-- todoapp class-->

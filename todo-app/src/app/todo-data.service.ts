@@ -4,7 +4,6 @@ import {Todo} from './todo';
 
 @Injectable()
 export class TodoDataService {
-
   // Placeholder for last id so we can simulate
   // automatic incrementing of id's
   lastId: number = 0;
@@ -14,7 +13,6 @@ export class TodoDataService {
 
   constructor() {
   }
-
 
 
   // Simulate POST /todos
@@ -27,14 +25,12 @@ export class TodoDataService {
   }
 
 
-
   // Simulate DELETE /todos/:id
   deleteTodoById(id: number): TodoDataService {
     this.todos = this.todos
       .filter(todo => todo.id !== id);
     return this;
   }
-
 
 
   // Simulate PUT /todos/:id
@@ -48,12 +44,10 @@ export class TodoDataService {
   }
 
 
-
   // Simulate GET /todos
   getAllTodos(): Todo[] {
     return this.todos;
   }
-
 
 
   // Simulate GET /todos/:id
