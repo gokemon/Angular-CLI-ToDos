@@ -1,6 +1,22 @@
 # Angular-CLI-ToDos
 Using Angular CLI to create a ToDos list using App Module, Components, Services &amp; Router
 
+This should be working; that you can deploy to gh-pages, and its suppose to run
+[https://gokemon.github.io/Angular-CLI-ToDos/todo-app/](https://gokemon.github.io/Angular-CLI-ToDos/todo-app/)
+
+# Application Architecture #
+- Initialized our Todo application using the Angular CLI
+- Created an AppComponent component to display the user interface
+- Created a Todo class to represent individual todos
+- Created a TodoDataService service to create, update and remove todos
+
+In the ComponentRefactoring branch, we will create:
+
+- a TodoListComponent to display a list of todo’s
+- a TodoListItemComponent to display a single todo
+- a TodoListHeaderComponent to create a new todo
+- a TodoListFooterComponent to show how many todo’s there are
+
 
 ## app.component.html ##
 Here is a super-short primer on Angular’s template syntax in case you haven’t seen it yet:
@@ -20,3 +36,14 @@ Here is a super-short primer on Angular’s template syntax in case you haven’
 - `(click)="removeTodo(todo)"`: execute removeTodo(todo) when the destroy button is clicked
 
 If you’re not familiar with Angular’s template syntax, you should definitely read the [official template syntax documentation](https://angular.io/docs/ts/latest/guide/template-syntax.html).
+
+## In Summary ##
+By the end of this project I should understand:
+
+- the basics of Angular component architecture
+- how you can pass data into a component using property bindings
+- how you can listen for events emitted by a component using event listeners
+- why it is a good practice to split components into smaller reusable components
+- the difference between smart and dumb components and why keeping components dumb is a good practice
+
+Still looking to ***Master Routing!***

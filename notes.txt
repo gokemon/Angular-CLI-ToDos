@@ -2,3 +2,16 @@
 
 https://www.sitepoint.com/angular-2-tutorial/
 
+https://www.sitepoint.com/understanding-component-architecture-angular/
+
+In the second part of this project I created a git branch, 
+ComponentRefactoring.
+I currently have a ToDo class to represent individual todos, 
+a TodoDataService class to create, update and remove todos,
+as well as my main AppComponent to display the user interface.
+
+I plan to create:
+a TodoListComponent to display a list of todo’s
+a TodoListItemComponent to display a single todo
+a TodoListHeaderComponent to create a new todo
+a TodoListFooterComponent to show how many todo’s are left

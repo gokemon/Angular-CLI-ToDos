@@ -1,16 +1,20 @@
 import { Component } from '@angular/core';
+// imports Angular "core" above and my stuff below
 import {Todo} from './todo';
-// Import class so we can register it as dependency injection toke
 import {TodoDataService} from './todo-data.service';
+// Import class so we can register it as dependency injection toke
 
 
+// TypeDecorator 
 @Component({
+  // properties
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   providers: [TodoDataService]
 })
 
+// export class
 export class AppComponent {
   title = 'My ToDo App';
   myStatement1 = 'Things to do';
@@ -24,7 +28,7 @@ export class AppComponent {
   constructor(private todoDataService: TodoDataService) {
   }
 
-
+  // method functions below
   addTodo() {
     this.todoDataService.addTodo(this.newTodo);
     this.newTodo = new Todo();

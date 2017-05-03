@@ -6,7 +6,7 @@
     </header>
 
     <section class="main" *ngIf="todos.length > 0">
-        <ul class="todo-list">
+        <Ol class="todo-list">
             <li *ngFor="let todo of todos" [class.completed]="todo.complete">
                 <div class="view">
                     <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
@@ -14,7 +14,7 @@
                     <button class="destroy" (click)="removeTodo(todo)"></button>
                 </div>
             </li>
-        </ul>
+        </Ol>
     </section>
     <!-- main class-->
 
@@ -23,7 +23,7 @@
             <strong>{{todos.length}}</strong> 
             {{todos.length == 1 ? 'item' : 'items'}}
         </span>
-
+        <p>Why purple? Well its a little like blue, but with a tinge of Red, GET THIS DONE added.</p>
     </footer>
 </section>
 <!-- todoapp class-->
