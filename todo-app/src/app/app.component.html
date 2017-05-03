@@ -1,4 +1,5 @@
 <section class="todoapp">
+    <!-- TodoListHeaderComponent that lets us create new todo -->
     <header class="header">
         <h1>{{title}}</h1>
         <p class="langBundle">{{myStatement2}}</p>
@@ -6,6 +7,7 @@
     </header>
 
     <section class="main" *ngIf="todos.length > 0">
+        <!-- TodoListComponent that displays todos -->
         <Ol class="todo-list">
             <li *ngFor="let todo of todos" [class.completed]="todo.complete">
                 <div class="view">
@@ -18,6 +20,7 @@
     </section>
     <!-- main class-->
 
+    <!-- TodoListFooterComponent that displays statistics -->
     <footer class="footer" *ngIf="todos.length > 0">
         <span class="todo-count">
             <strong>{{todos.length}}</strong> 

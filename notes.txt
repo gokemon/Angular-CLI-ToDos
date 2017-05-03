@@ -15,3 +15,5 @@ a TodoListComponent to display a list of todo’s
 a TodoListItemComponent to display a single todo
 a TodoListHeaderComponent to create a new todo
 a TodoListFooterComponent to show how many todo’s are left
+
+and play around with styling the buttons?

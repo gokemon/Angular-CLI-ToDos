@@ -4,7 +4,6 @@ import {Todo} from './todo';
 import {TodoDataService} from './todo-data.service';
 // Import class so we can register it as dependency injection toke
 
-
 // TypeDecorator 
 @Component({
   // properties
