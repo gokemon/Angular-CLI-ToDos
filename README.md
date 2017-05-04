@@ -5,17 +5,29 @@ This should be working; that you can deploy to gh-pages, and its suppose to run
 [https://gokemon.github.io/Angular-CLI-ToDos/todo-app/](https://gokemon.github.io/Angular-CLI-ToDos/todo-app/)
 
 # Application Architecture #
-- Initialized our Todo application using the Angular CLI
+In the FirstBasicAppComponent branch, we created:
+
+- Created our Todo application using the Angular CLI
 - Created an AppComponent component to display the user interface
 - Created a Todo class to represent individual todos
 - Created a TodoDataService service to create, update and remove todos
 
-In the ComponentRefactoring branch, we will create:
+In the ComponentRefactoring branch, we created:
 
 - a TodoListComponent to display a list of todo’s
 - a TodoListItemComponent to display a single todo
 - a TodoListHeaderComponent to create a new todo
 - a TodoListFooterComponent to show how many todo’s there are
+
+
+In the process, we learned:
+
+- the basics of Angular component architecture
+- how to pass data into a component using property bindings
+- how to listen for events emitted by a component using event listeners
+- how splitting components into smaller reusable components makes our code easier to reuse and maintain
+- how we can use smart and dumb to make our life a whole lot easier when we need to refactor our application’s business logic
+
 
 
 ## app.component.html ##
