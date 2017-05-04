@@ -1,10 +1,11 @@
 <section class="todoapp">
     <!-- TodoListHeaderComponent that lets us create new todo -->
-    <header class="header">
+    <!--<header class="header">
         <h1>{{title}}</h1>
         <p class="langBundle">{{myStatement2}}</p>
         <input class="new-todo" placeholder={{fmPlaceHolder}} autofocus="" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()">
-    </header>
+    </header>-->
+    <app-todo-list-header (add)="onAddTodo($event)"></app-todo-list-header>
 
     <section class="main" *ngIf="todos.length > 0">
         <!-- TodoListComponent that displays todos -->
