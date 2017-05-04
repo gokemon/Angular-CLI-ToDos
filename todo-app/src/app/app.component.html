@@ -7,8 +7,10 @@
     </header>-->
     <app-todo-list-header (add)="onAddTodo($event)"></app-todo-list-header>
 
-    <section class="main" *ngIf="todos.length > 0">
-        <!-- TodoListComponent that displays todos -->
+
+
+    <!-- TodoListComponent that displays todos -->
+    <!--<section class="main" *ngIf="todos.length > 0">    
         <Ol class="todo-list">
             <li *ngFor="let todo of todos" [class.completed]="todo.complete">
                 <div class="view">
@@ -18,8 +20,11 @@
                 </div>
             </li>
         </Ol>
-    </section>
+    </section>-->
+    <!-- section is now replaced with app-todo-list -->
+    <app-todo-list [todos]="todos" (toggleComplete)="onToggleTodoComplete($event)" (remove)="onRemoveTodo($event)"></app-todo-list>
     <!-- main class-->
+
 
     <!-- TodoListFooterComponent that displays statistics -->
     <footer class="footer" *ngIf="todos.length > 0">

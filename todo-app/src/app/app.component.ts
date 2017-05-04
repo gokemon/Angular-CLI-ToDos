@@ -39,12 +39,13 @@ export class AppComponent {
     this.todoDataService.addTodo(todo);
   }
 
-    // Service is now available as this.todoDataService
-  toggleTodoComplete(todo) {
+  // rename from toggleTodoComplete
+  onToggleTodoComplete(todo: Todo) {
     this.todoDataService.toggleTodoComplete(todo);
   }
 
-  removeTodo(todo) {
+  // rename from removeTodo
+  onRemoveTodo(todo: Todo) {
     this.todoDataService.deleteTodoById(todo.id);
   }
 

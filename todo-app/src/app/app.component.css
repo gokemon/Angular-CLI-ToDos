@@ -1,6 +1,12 @@
-header h1 {
+/*app.component.css*/
+
+
+/*Moved to todo-list-header.component.css*/
+
+
+/*header h1 {
     color: green;
-}
+}*/
 
 .todo-count {
     color: purple;
